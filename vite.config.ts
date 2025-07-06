@@ -4,7 +4,7 @@ import path from 'path'
 import { componentTagger } from 'lovable-tagger'
 
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/your-actual-repo-name/' : '/',
+  base: mode === 'production' ? '/underdog-ads-forge/' : '/',
   build: {
     assetsInlineLimit: 0, // forces asset URLs rather than inline code
   },
