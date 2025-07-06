@@ -5,6 +5,9 @@ import { componentTagger } from 'lovable-tagger'
 
 export default defineConfig(({ mode }) => ({
   base: mode === 'production' ? '/underdog-ads-forge/' : '/',
+  build: {
+    assetsInlineLimit: 0, // forces asset URLs rather than inline code
+  },
   server: {
     host: '::',
     port: 8080,
